@@ -6,7 +6,7 @@
   fixedInViewport="true"
   [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
   [mode]="(isHandset$ | async) ? 'over' : 'side'" >
-    <mat-toolbar class="white"><img  src="assets/logo.png" width="80%" style="margin:auto"></mat-toolbar>
+    <mat-toolbar class="white"><img  class="logo-img" src="assets/images/bridge-mart-logo.png" width="80%" style="margin:auto"></mat-toolbar>
     <mat-nav-list>
       <a class="sidenavelement" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/" mat-list-item href="#"><mat-icon>dashboard</mat-icon> &nbsp; Dashboard</a>
       <a class="sidenavelement" routerLinkActive="active-link" routerLink="/user" mat-list-item href="#"><mat-icon>person</mat-icon> &nbsp; User Profile</a>
@@ -38,14 +38,14 @@
       </mat-form-field>
     </p>
     <span class="example-fill-remaining-space"></span>  
-      <button mat-icon-button color="primary">
+      <button mat-icon-button class="primary-icon">
         <mat-icon>dashboard</mat-icon>
        </button>
-      <button mat-icon-button color="primary"  matBadge="8" matBadgePosition="after" matBadgeColor="accent">
+      <button mat-icon-button class="primary-icon" matBadge="8" matBadgePosition="after" matBadgeColor="accent">
         <i style="font-size:24px " class="fas fa-bell"></i>
        </button> &nbsp;
      
-       <button mat-icon-button color="primary" [matMenuTriggerFor]="menu">
+       <button mat-icon-button class="primary-icon" [matMenuTriggerFor]="menu">
         <i style="font-size:24px " class="fas fa-user"></i>
        </button>
        <mat-menu #menu="matMenu">
