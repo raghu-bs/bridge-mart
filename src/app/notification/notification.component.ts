@@ -4,7 +4,7 @@ import {MatSnackBar} from '@angular/material';
 @Component({
   selector: 'app-notification',
   templateUrl: './notification.component.html',
-  styleUrls: ['./notification.component.css']
+  styleUrls: ['./notification.component.scss']
 })
 export class NotificationComponent implements OnInit {
 f={a:true, b:true, c:true, d:true, e:true, f:true, g:true, h:true }
