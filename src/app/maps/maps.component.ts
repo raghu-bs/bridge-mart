@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapsComponent implements OnInit {
 
+  title: string;
+  lat: number;
+  lng: number;
   constructor() { }
 
   ngOnInit() {
+    this.title = 'Ampersand Academy';
+    this.lat = 13.039306;
+    this.lng = 80.216040;
   }
-  title: string = 'Ampersand Academy';
-  lat: number = 13.039306;
-  lng: number = 80.216040;
+
 }
